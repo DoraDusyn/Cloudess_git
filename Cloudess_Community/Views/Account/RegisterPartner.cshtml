@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Cloudess_Community.Models.RegisterPartnerViewModel
+@{
+    ViewBag.Title = "Regisztráció";
+}
+<div id="content" class="row centered bgHeader child-div myPadding">
+    <div class="row">
+        <label class="contentLabel contentLabelDiv" style="font-size: 70px;">regisztráció partnerként</label>
+    </div>
+</div>
+<div class="row"></div>
+    @using (Html.BeginForm("regisztráció partnerként", "Account", FormMethod.Post, new { @class = "form-horizontal myForm", role = "form" }))
+    {
+        @Html.ValidationSummary("", new { @class = "text-danger" })
+        <div class="form-group myFormDiv">
+            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label myFormLabel" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group myFormDiv">
+            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label myFormLabel" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group myFormDiv">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label myFormLabel" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group myFormDiv">
+            @Html.LabelFor(m => m.companyName, new { @class = "col-md-2 control-label myFormLabel" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.companyName, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group myFormDiv">
+            @Html.LabelFor(m => m.companySize, new { @class = "col-md-2 control-label myFormLabel" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.companySize, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group myFormDiv">
+            @Html.LabelFor(m => m.field, new { @class = "col-md-2 control-label myFormLabel" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.field, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-8 myFormButton">
+                <input type="submit" class="btn btn-default myFormLabel" value="Regisztráció" />
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    }
+        <div id="content" class="row centered bgHeaderBot child-div myPadding">
+            @*<div class="row">
+                <label class="contentLabel contentLabelDiv" style="font-size: 70px;">regisztráció partnerként</label>
+            </div>*@
+        </div>
+
+
+
+
+
+

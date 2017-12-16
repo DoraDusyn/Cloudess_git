@@ -1,0 +1,165 @@
+﻿@font-face {
+    font-family: Simp;
+    src: local('Simplifica Regular'), local('Simplifica');
+    /* Check how the font is written on the machine --> Right click on file -> Details -> Title */
+    src: url(/fonts/SIMPLIFICA.ttf) format('truetype');
+    font-weight: normal;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    width: 100%;
+    margin: 0 auto;
+}
+
+.myContainer{
+    max-width:none;
+    padding-left:0;
+    padding-right:0;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+.child-div {
+    /*position: absolute;*/
+    left: 0;
+    right: 0;
+}
+
+.video {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.centered {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.leftDiv {
+    width: 100%;
+    margin-left: 15px;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.bgimg {
+    background-image: url('https://localhost:44393/background07.jpg');
+    width: 100vw;
+    height:400px;
+    /*background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;*/
+
+}
+
+.bgHeader {
+    background-image: url('https://localhost:44393/headerC.jpg');
+    width: 100vw;
+    height: 190px;
+    background-repeat:no-repeat;
+    vertical-align:central;
+    text-align:left;
+    padding-left:80px;
+    padding-top:45px;
+}
+
+.bgHeaderBot {
+    background-image: url('https://localhost:44393/header.jpg');
+    width: 100vw;
+    height: 190px;
+    
+    vertical-align: central;
+    text-align: left;
+    padding-left: 80px;
+    padding-top: 45px;
+}
+
+.myForm {
+    padding-top: 30px;
+}
+
+.myFormLabel {
+    font-family: Simp;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-size: 25px;
+    font-weight: normal;
+    color: #be7894;
+    text-align: left;
+}
+
+.myFormLabelUser {
+    font-family: Simp;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-size: 25px;
+    font-weight: normal;
+    color: #5d9e8a;
+    text-align: left;
+}
+
+.myFormDiv {
+    line-height:25px;
+    text-align:center;
+}
+
+.myFormButton {
+    text-align: center;
+}
+/*.bulb {
+    background-image: url('https://localhost:44393/bulb.png');
+    width: 100px;
+    height: 98px;
+}
+
+.network {
+    background-image: url('https://localhost:44393/net.png');
+    width: 200px;
+    height: 122px;
+}*/
+.partners {
+    background-image: url('https://localhost:44393/partners.jpg');
+    background-repeat: no-repeat;
+    height: 244px;
+}
+
+.contentLabel {
+    font-family: Simp;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-size: 40px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.footerLabel {
+    font-family: Simp;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font-size: 40px;
+    font-weight: normal;
+    color: #be7894;
+    text-align: center;
+}
+
+.contentLabelDiv {
+    top: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}

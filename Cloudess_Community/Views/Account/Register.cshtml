@@ -1,0 +1,99 @@
+﻿@model Cloudess_Community.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Regisztráció";
+}
+<style>
+    a:link {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    a:active {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .linkBtn {
+        background-color: transparent;
+    }
+    .myPadding{
+        padding-top:20px;
+        margin-top: 20px;
+    }
+</style>
+@using (Html.BeginForm("Regisztráció", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <div id="logo_video" class="row video">
+        @*<img src="https://localhost:44393/9BB26D1F-59F2-4E5E-936A-B5F9CD7D6EF5.png" />*@
+        <video width="640" height="360" autoplay loop>
+            <source src="https://localhost:44393/clodessvector_originalcolor.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <div id="content" class="row centered bgimg child-div myPadding">
+        <div class="row">
+            <label class="contentLabel contentLabelDiv" style="font-size: 70px;">új fiók létrehozása</label>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                @*<a href="~/Views/Account/RegisterPartner.cshtml" class="btn btn-default"></a>*@
+                <button class="btn btn-default btn-lg linkBtn" type="button">@Html.ActionLink("Partnerként", "RegisterPartner", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-default btn-lg linkBtn" type="button">@Html.ActionLink("Felhasználóként", "RegisterUser", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</button>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <img src="https://localhost:44393/partner.png" />
+            </div>
+            <div class="col-md-4">
+                <img src="https://localhost:44393/user.png" />
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    
+
+
+    @*@Html.ValidationSummary("", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+            </div>
+        </div>*@
+    @*<div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Regisztráció" />
+            </div>
+        </div>*@
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
